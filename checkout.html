@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FashionNow</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="https://kit.fontawesome.com/177cfb6bd5.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">FashionNow</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="badge badge-danger">1</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="checkout-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="checkout__summary">
+              <div class="checkout-card card">
+                <div class="card-header">
+                  Summary
+                </div>
+                <div class="card-body checkout__summary--body">
+                  <div class="checkout__summary--item">
+                    <div class="checkout__summary--image">
+                      <img
+                        src="assets/img/woman-posing-for-photo-shoot-1689731.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="checkout__summary--details">
+                      <h6>Clothes Name</h6>
+                      <p>$99.90</p>
+
+                      <div class="checkout__summary--quantity">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">-</div>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control quantity-selector"
+                            id="quantity"
+                          />
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">+</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <i class="fas fa-trash-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="checkout-card card">
+              <div class="card-header">
+                Mode of Payment
+              </div>
+              <div class="card-body">
+                <div class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    id="cod"
+                    name="customRadio"
+                    class="custom-control-input"
+                  />
+                  <label class="custom-control-label" for="cod"
+                    >COD (Cash on Delivery)</label
+                  >
+                </div>
+                <div class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    id="creditCard"
+                    name="customRadio"
+                    class="custom-control-input"
+                  />
+                  <label class="custom-control-label" for="creditCard"
+                    >Credit Card</label
+                  >
+                </div>
+                <div class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    id="paypal"
+                    name="customRadio"
+                    class="custom-control-input"
+                  />
+                  <label class="custom-control-label" for="paypal"
+                    >Paypal</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="checkout__ship-info">
+              <div class="checkout-card card">
+                <div class="card-header">
+                  Shipping
+                </div>
+                <div class="card-body">
+                  <p class="card-text text-muted">
+                    <i class="fas fa-map-marker-alt"></i> 12 st. New City,
+                    Philippines
+                  </p>
+
+                  <div class="checkout__total">
+                    <p>Subtotal: <span>99.90</span></p>
+                    <p>Shipping fee: <span>FREE</span></p>
+                    <p>Voucher <span>0</span></p>
+                    <p>Total: <span>$99.90</span></p>
+                  </div>
+                  <a href="#" class="btn btn-primary form-control">Checkout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="copyright-wrapper">
+          <small>&copy; Copyright 2020. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/theme_module.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+.home {
+  flex-grow: 1;
+
+  &__banner {
+    width: 100%;
+    height: 450px;
+    background: url("../img/banner/adolescent-casual-cute-elegant-428338.jpg");
+    background-size: cover;
+    background-position: center;
+
+    @include respond-to("screen-xs") {
+      height: 200px;
+    }
+  }
+
+  .card {
+    margin: auto;
+    margin-bottom: 16px;
+    text-align: center;
+    border: none;
+  }
+
+  .products {
+    padding: 16px 0;
+
+    .filter-wrapper {
+      label {
+        color: #5c5c5c;
+      }
+    }
+
+    .item {
+      &__image {
+        width: 100%;
+        height: auto;
+
+        @include respond-to("screen-xs") {
+          height: auto;
+        }
+      }
+
+      &__name {
+        margin: 0;
+      }
+
+      &__price {
+        color: #7c7c7c;
+      }
+    }
+  }
+}

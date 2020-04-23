@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+// Mixins
+@import "abstract/mixins";
+
+//Layouts
+@import "layouts/header", "layouts/footer";
+
+//Pages
+@import "helpers/helper", "pages/home", "pages/product", "pages/login",
+  "pages/checkout", "pages/cart";
+
+//Vendors
+// @import 'vendors/fontawesome-free-5.9.0-web/scss/fontawesome.scss',
+// 'vendors/fontawesome-free-5.9.0-web/scss/solid.scss',
+// 'vendors/fontawesome-free-5.9.0-web/scss/brands.scss',
+// 'vendors/fontawesome-free-5.9.0-web/scss/regular.scss';

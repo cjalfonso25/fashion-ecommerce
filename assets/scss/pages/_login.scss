@@ -1,0 +1,17 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    form {
+      width: 100%;
+    }
+  }
+}

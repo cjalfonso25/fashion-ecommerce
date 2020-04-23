@@ -1,0 +1,13 @@
+header {
+  .nav-item {
+    .nav-link {
+      position: relative;
+      .badge {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        border-radius: 100%;
+      }
+    }
+  }
+}
